@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Mohammed Fatehpurwala | Security & Backend Engineer</title>
-  <meta name="description" content="Security-focused backend engineer specializing in cloud, forensics, and secure systems." />
+  <meta name="description" content="Security-focused backend engineer specializing in cloud and secure systems." />
 
   <link rel="stylesheet" href="./style.css" />
 
@@ -21,21 +21,21 @@
   <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
-<body class="bg-obsidian text-platinum font-sans antialiased overflow-x-hidden">
+<body class="bg-obsidian text-platinum overflow-x-hidden">
 
-  <!-- Navbar -->
-  <custom-navbar></custom-navbar>
+  <!-- NAVBAR TARGET -->
+  <div id="navbar"></div>
 
   <main>
-    <!-- Your existing content stays exactly the same -->
+    <!-- your existing content stays unchanged -->
   </main>
 
-  <!-- Footer -->
-  <custom-footer></custom-footer>
-
-  <!-- Scripts (order matters) -->
+  <!-- Scripts -->
   <script src="./navbar.js"></script>
-  <script src="./footer.js"></script>
   <script src="./script.js"></script>
+
+  <script>
+    if (window.feather) feather.replace();
+  </script>
 </body>
 </html>
